@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What’s Your 2k26 Character?</title>
+  <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+
+  <!-- START PAGE -->
+  <section id="start-screen" class="screen active">
+    <h1 class="title">WHAT’S UR 2K26 VIBE?!</h1>
+    <p class="subtitle">Let’s find out ✨</p>
+    <button class="primary-btn" onclick="startQuiz()">PLAY</button>
+  </section>
+
+  <!-- QUESTION PAGE -->
+  <section id="quiz-screen" class="screen">
+    <h2 id="question-text"></h2>
+    <div id="options"></div>
+    <p class="progress" id="progress"></p>
+  </section>
+
+  <!-- RESULT PAGE -->
+  <section id="result-screen" class="screen">
+    <div class="result-card">
+      <img id="result-img" class="character-img" src="" alt="">
+      <h1 id="result-name"></h1>
+      <h2 id="result-title"></h2>
+      <p id="result-desc"></p>
+
+      <div class="vibe-box">
+        <p id="result-vibe"></p>
+        <p class="quote" id="result-quote"></p>
+      </div>
+
+      <div class="buttons">
+        <button onclick="restartQuiz()">↺ Retake</button>
+        <button onclick="shareResult()">📤 Share</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="test.js"></script>
+</body>
+</html>

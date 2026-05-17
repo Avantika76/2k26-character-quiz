@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's Your 2k26 Character?</title>
+  <link rel="stylesheet" href="0126.css" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <section id="start-screen" class="screen active">
+    <div class="start-poster">
+      <h1>WHAT’S<br>UR 2K26<br>VIBE?!</h1>
+      <p class="subtitle">LET’S FIND OUT !!</p>
+      <button class="primary-btn" onclick="startQuiz()">PLAY</button>
+    </div>
+  </section>
+
+  <!-- QUIZ SCREEN -->
+  <section id="quiz-screen" class="screen">
+    <div class="quiz-box">
+      <h2 class="box-title">QUIZ TIME</h2>
+
+      <p id="question-text"></p>
+
+      <div id="options"></div>
+
+      <p class="progress" id="progress"></p>
+
+      <p class="footer-tag">@0126</p>
+    </div>
+  </section>
+
+  <!-- RESULT SCREEN -->
+  <section id="result-screen" class="screen">
+
+    <div class="quiz-box">
+        <img id="result-img" class="character-img" src="" alt="">
+
+      <h2 class="box-title">RESULT</h2>
+
+      <div class="result-card">
+        <h1 id="result-name"></h1>
+        <h2 id="result-title"></h2>
+        <p id="result-desc"></p>
+
+        <div class="vibe-box">
+          <p id="result-vibe"></p>
+          <p class="quote" id="result-quote"></p>
+        </div>
+
+        <div class="buttons">
+          <button onclick="restartQuiz()">↺ Retake quiz</button>
+          <button onclick="shareResult()">Share result</button>
+        </div>
+      </div>
+
+      <p class="footer-tag">@0126</p>
+    </div>
+  </section>
+
+  <script src="test.js"></script>
+</body>
+</html>
